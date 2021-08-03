@@ -437,16 +437,16 @@
         br
         br
 
-        table.bord
+        table.bord.bordecel.m-der 
           thead
             tr.t-f3
               td(colspan='3')
                 b Gastos de administración y ventas - Mensual
-              td
+              td.t-f4
                 b $250.000
         br
         br
-        table.bord
+        table.bord.bordecel.m-der 
           thead        
             tr
               th(colspan='4') Financiación con acreedores financieros
@@ -455,13 +455,13 @@
               td(colspan='3') Monto del pr&eacute;stamo bancario
               td $7.500.000
             tr
-              td(colspan='3') Tasaanual del pr&eacute;stamo - anual
+              td(colspan='3') Tasa anual del pr&eacute;stamo - anual
               td 24%
             tr.t-f3
-              td(colspan='3') Plazodel pr&eacute;stamo en a&ntilde;os
+              td(colspan='3') Plazo del pr&eacute;stamo en a&ntilde;os
               td3
             tr
-              td(colspan='3') Abonoanual
+              td(colspan='3') Abono anual
               td $2.500.000
         br
         br
@@ -471,11 +471,11 @@
             tr.t-f3
               td(colspan='3') 
                 b Plazode proveedores de materia prima - Días
-              td
+              td.t-f4
                 b 45
         br 
         br
-        table
+        table.bordecel.m-der 
           thead
             tr
               th(colspan='4') Niveles de inversi&oacute;n en activos corrientes
@@ -498,7 +498,7 @@
             tr.t-f3
               td.t-f5(colspan='3')
                 b Tasa de impuesto a la renta
-              td
+              td.t-f4
                 b 35%
         br 
         br
@@ -642,7 +642,7 @@
 
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table.table-striped.bordecel
+        table.table-striped.bordecel.m-der 
           thead
             tr
               th(colspan='3') 
@@ -689,7 +689,7 @@
               td $1.200.000
         br
         br     
-        table.table-striped.bordecel
+        table.table-striped.bordecel.m-der 
           tbody
             tr
               td  Costos unitario total
@@ -706,31 +706,31 @@
     p.mb-5 Se calcula la inversión que se debe hacer en inventarios y en cartera:
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table.table-striped.bordecel
+        table.table-striped.bordecel.m-der 
           thead
             tr
               th(colspan='3' rowspan='2') Inversi&oacute;n en activos corrientes  (miles de pesos)
             tr
           tbody
             tr
-              td Productos&nbsp;&nbsp;&nbsp;en proceso
-              td (5.208&nbsp;&nbsp;&nbsp;x 150.98)
+              td Productos en proceso
+              td (5.208 x 150.98)
               td $786.346
             tr
-              td Productos&nbsp;&nbsp;&nbsp;terminados
-              td (26.042&nbsp;&nbsp;&nbsp;X 150.98)
+              td Productos terminados
+              td (26.042 X 150.98)
               td $3.931.729
             tr
-              td Materia&nbsp;&nbsp;&nbsp;prima
-              td (13.281.350&nbsp;&nbsp;&nbsp;/ 360 X 60)
+              td Materia prima
+              td (13.281.350 / 360 X 60)
               td $2.213.542
             tr
               td Cartera
-              td (125.000&nbsp;&nbsp;&nbsp;/ 360 X 60) X 150.98
+              td (125.000 / 360 X 60) X 150.98
               td $3.145.383
             tr
               td(colspan='2')
-                b Total inversi&oacute;n en&nbsp;&nbsp;&nbsp;capital de trabajo operativo
+                b Total inversi&oacute;n en capital de trabajo operativo
               td $10.077.000
     br
     
@@ -764,7 +764,7 @@
     p.mb-5 Para calcular el valor a financiar con proveedores se debe determinar primero el valor de las compras de materia prima de todo el periodo.
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table.table-striped.bordecel
+        table.table-striped.bordecel.m-der 
           thead
             tr
               th(colspan='2') 
@@ -798,7 +798,7 @@
     p.mb-5 Ya se tiene información suficiente para determinar el valor total de la inversión inicial requerida en activos que debe hacer la compañía y la financiación disponible:
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table.table-striped.bordecel    
+        table.table-striped.bordecel.m-der    
           thead
             tr
               th(colspan='2') Cálculo de la inversión inicial y los aportes  (miles de pesos)
@@ -832,7 +832,7 @@
                 b $23.774.458
         br
         br
-        table.table-striped.bordecel    
+        table.table-striped.bordecel.m-der    
           tbody        
             tr
               td.t-ng Financiación disponible
@@ -854,7 +854,7 @@
                 b $9.436.849
         br
         br
-        table.table-striped.bordecel    
+        table.table-striped.bordecel.m-der   
           tbody        
             tr
               td.t-ng Aporte requerido de socios
@@ -876,7 +876,7 @@
     p.mb-5 El siguiente paso es calcular el costo de ventas.
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table.table-striped.bordecel        
+        table.table-striped.bordecel.m-der       
           thead
             tr
               th(colspan='2' ) Costos de ventas (miles de pesos)
