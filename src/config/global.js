@@ -112,17 +112,19 @@ export default {
   referencias: [
     {
       referencia:
-        'Araújo, A., D. (2012). Presupuestos empresariales: eje de la planeación financiera. Editorial Trillas.',
+        'Araújo, A., D. (2012). <em>Presupuestos empresariales: eje de la planeación financiera.</em> Editorial Trillas.',
     },
     {
       referencia:
-        'Ministerio de Hacienda y Crédito Público. (2020). Aspectos generales del proceso presupuestal colombiano.',
-      link:
+        'Ministerio de Hacienda y Crédito Público. (2020).<em> Aspectos generales del proceso presupuestal colombiano.</em>',
+      descarga:
         '/downloads/Lineamiento_Ministerio-de-Hacienda-y-Credito-Publico.pdf',
+      link:
+        'https://colaboracion.dnp.gov.co/CDT/Normograma/Lineamiento%20Ministerio%20de%20Hacienda%20y%20Credito%20P%C3%BAblico.pdf',
     },
     {
       referencia:
-        'Ramírez, M., C. (2011). Los presupuestos: sus objetivos e importancia. Revista Cultural Unilibre, (2), 74-84.',
+        'Ramírez, M., C. (2011). Los presupuestos: sus objetivos e importancia.<em> Revista Cultural Unilibre,</em> (2), 74-84.',
     },
   ],
   glosario: [
@@ -164,13 +166,13 @@ export default {
     {
       termino: 'Política',
       significado:
-        'enunciado de un deseo y las acciones concretas que se proponen para alcanzarlo. Este debe ser claro, medible y observable. define de forma más abstracta y cualitativamente, lo que pretende lograr',
+        'enunciado de un deseo y las acciones concretas que se proponen para alcanzarlo. Este debe ser claro, medible y observable. Define de forma más abstracta y cualitativamente, lo que pretende lograr',
     },
   ],
   complementario: [
     {
       texto:
-        'Contabilidad de costo en alta gerencia	Polo, G., B. (2017). Contabilidad de costos en la alta gerencia: teórico-práctico. Grupo Editorial Nueva Legislación SAS.',
+        'Contabilidad de costo en alta gerencia	Polo, G., B. (2017). <em>Contabilidad de costos en la alta gerencia: teórico-práctico.</em> Grupo Editorial Nueva Legislación SAS.',
       tipo: 'e-Libro',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/70840',
@@ -185,6 +187,12 @@ export default {
       },
     ],
     contenidoInstruccional: [
+      {
+        nombre: 'Rafael Neftalí Lizcano Reyes',
+        cargo: 'Asesor pedagógico.',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
       {
         nombre: 'Hernando Rodríguez Figueroa',
         cargo: 'Coordinador de Formación Virtual',
@@ -233,7 +241,7 @@ export default {
       },
 
       {
-        nombre: '',
+        nombre: 'Magdi Khalifah Gamboa',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',

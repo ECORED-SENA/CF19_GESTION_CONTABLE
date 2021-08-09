@@ -75,7 +75,7 @@
           figure
             img.mx-5.img-220(src='@/assets/tema1/img-3.svg')
         .col-md-8
-          p #[strong Rígidos:] se elaboran para un único volumen de producción, el cual, una vez alcanzado, no permite ajustes ya que tienen como función generar un control anticipado sin tener en cuenta variaciones en el entorno económico, político o social. Anteriormente eran muy utilizados en el sector público.
+          p #[strong Rígidos:] se elaboran para un único volumen de producción, el cual, una vez alcanzado, no permite ajustes, ya que tienen como función generar un control anticipado sin tener en cuenta variaciones en el entorno económico, político o social. Anteriormente eran muy utilizados en el sector público.
           p #[strong Flexibles:] se elaboran para diferentes niveles de producción, tienen en cuenta el comportamiento de los indicadores macroeconómicos como el PIB, la tasa de cambio y la inflación, al igual que, movimientos políticos y sociales a nivel nacional e internacional, por lo cual se pueden adaptar fácilmente a las circunstancias cambiantes del entorno. Son de gran aceptación en el campo de la presupuestación moderna, pues son dinámicos, adaptativos, pero complicados y costosos.
       div(titulo="Según el periodo")
         .row

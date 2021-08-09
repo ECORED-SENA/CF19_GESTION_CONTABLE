@@ -86,24 +86,21 @@
     p El siguiente es el resumen de las cifras que sirvieron de base para elaborar el presupuesto:
     p.mb-5 Ventas proyectadas de 125.000 unidades calculadas utilizando el método de regresión lineal que sigue la siguiente metodología:
 
-    .row2.fond3.p-4.mb-3
-
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 a
-
-        .crd_03__txt
-          h4 Se dispone de las ventas históricas del sector durante los últimos 6 años:
-          .row.justify-content-around.align-items-center
-            .col-lg-6   
-              
-                table.t-f1
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ a
+        .col-lg-11 
+          .crd_03__txt
+            h4 Se dispone de las ventas históricas del sector durante los últimos 6 años:
+            .row.justify-content-around.align-items-center
+              .col-lg-6
+                table.bordecel
                   thead
-                    tr 
+                    tr
                       th Año (histórico)
                       th Cantidad
-                  tbody
+                  tbody.t-f1
                     tr.t-f3
                       td.t-f5 Año 1
                       td 4.950.000
@@ -122,208 +119,203 @@
                     tr
                       td.t-f5 Año 6
                       td 8.377.500
-    .row2.fond3.p-4.mb-3
-
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 b
-
-        .crd_03__txt
-          h4 Se proyectan las ventas futuras del sector para los próximos años utilizando la ecuación y = mx + b, en donde:
-          p #[strong m]	es la pendiente de la línea de regresión que representa el número de unidades que aumenta #[strong y] por cada unidad de #[strong x]. Se calcula con la siguiente fórmula:
-          figure
-            img.img-220.mb-5(src="@/assets/tema2/img-7.svg")  
-          p.mb-5 #[strong b] es la intersección de #[strong y] en la línea de regresión cuando #[strong x] toma el valor de cero. Se calcula con la siguiente fórmula:
-          figure
-            img.img-220.mb-5(src="@/assets/tema2/img-8.svg")      
-          p.mb-5 #[strong x] es el número del año histórico.    
 
 
-    .row2.fond3.p-4.mb-3
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ b
+        .col-lg-11 
+          .crd_03__txt
+            h4 Se proyectan las ventas futuras del sector para los próximos años utilizando la ecuación <em>y = mx + b</em>, en donde:
+            p <em>#[strong m]</em>	es la pendiente de la línea de regresión que representa el número de unidades que aumenta <em>#[strong y]</em> por cada unidad de <em>#[strong x]</em>. Se calcula con la siguiente fórmula:
+            figure
+              img.img-220.mb-5(src="@/assets/tema2/img-7.svg")  
+            p.mb-5 <em>#[strong b]</em> es la intersección de <em>#[strong y]</em> en la línea de regresión cuando <em>#[strong x]</em> toma el valor de cero. Se calcula con la siguiente fórmula:
+            figure
+              img.img-220.mb-5(src="@/assets/tema2/img-8.svg")      
+            p.mb-5 <em>#[strong x]</em> es el número del año histórico.    
 
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 c
 
-        .crd_03__txt
-          h4 Para desarrollar las fórmulas de #[strong m] y #[strong b] se utilizó la siguiente tabla en Excel:         
-          .row
-            .col-lg-6.mb-5      
-              table
-                thead.t-f1
-                  tr
-                    th Año (histórico)
-                    th X
-                    th Y
-                    th XY
-                    th X
-                      sup 2
-                tbody.t-f1
-                  tr.t-f3
-                    td Año 1
-                    td 1
-                    td 4.950.000
-                    td 4.950.000
-                    td 1
-                  tr
-                    td Año 2
-                    td 2
-                    td 5.380.000
-                    td 10.760.000
-                    td 4
-                  tr.t-f3
-                    td Año 3
-                    td 3
-                    td 5.760.000
-                    td 17.280.000
-                    td 9
-                  tr
-                    td Año 4
-                    td 4
-                    td 6.150.000
-                    td 24.000.000
-                    td 16
-                  tr.t-f3
-                    td Año 5
-                    td 5
-                    td 6.625.000
-                    td 33.125.000
-                    td 25
-                  tr
-                    td Año 6
-                    td 6
-                    td 8.377.500
-                    td 50.265.000
-                    td 36
-                  tr.t-f3
-                    td
-                      b Sumatorias
-                    td
-                      b 21
-                    td
-                      b 37.242.500.
-                    td
-                      b 140.980.000
-                    td
-                      b 91
-            .col-lg-6.px-lg-5
-              p El resumen de los datos es el siguiente:     
-              table
-                thead.t-f1
-                  tr
-                    th n	
-                    th 6
-                tbody.t-f1
-                  tr.t-f3
-                    td.t-f5 Sumatoria de Y	
-                    td 37.242.500
-                  tr 
-                    td.t-f5 Sumatoria de X	
-                    td 21
-                  tr.t-f3 
-                    td.t-f5 Sumatoria de XY	
-                    td 140.980.000
-                  tr 
-                    td.t-f5 Sumatoria de X 
-                      sup 2	
-                    td 91
-    .row2.fond3.p-4.mb-3
 
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 d
-
-        .crd_03__txt
-          h4 A continuación, se presenta la gráfica de la línea de regresión elaborada con los datos consignados anteriormente:         
-          figure
-            img.img-500.mb-2(src="@/assets/tema2/img-9.svg")
-    .row2.fond3.p-4.mb-3
-
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 e
-
-        .crd_03__txt
-          h4.mb-4 Con los datos calculados de m y b se proyectan las ventas para los períodos que se necesiten. A continuación, se muestra la proyección para 6 años siendo 7 el primer año de la proyección:
-          .row.justify-content-around.align-items-center
-            .col-lg-6
-              table
-                thead
-                  tr
-                    th Año (proyectado)
-                    th N° del año
-                    th Cantidad
-                tbody.t-f1
-                  tr.t-f3
-                    td Año 1
-                    td 7
-                    td 8.333.333
-                  tr
-                    td Año 2
-                    td 8
-                    td 8.940.833
-                  tr.t-f3
-                    td Año 3
-                    td 9
-                    td 9.548.333
-                  tr
-                    td Año 4
-                    td 10
-                    td 10.155.833
-                  tr.t-f3
-                    td Año 5
-                    td 11
-                    td 10.763.333
-                  tr
-                    td Año 6
-                    td 12
-                    td 11.370.833
-    .row2.fond3.p-4.mb-5
-
-      .crd_03
-        .crd_03__icon.mx-4
-          .cc1
-            h1.cc3 f
-
-        .crd_03__txt
-          h4.mb-4 De acuerdo con un estudio del mercado, la empresa podría participar con una participación del 1,5% de las ventas del sector, por lo cual la empresa vendería durante los próximos 6 años el siguiente volumen de unidades:
-          .row.justify-content-around.align-items-center
-            .col-lg-6
-              table
-                thead
-                  tr
-                    th Cantidad de ventas del sector
-                    th Participación de la empresa
-                    th Ventas de la empresa
-                tbody.t-f1
-                  tr.t-f3
-                    td 8.333.333
-                    td 1,5%
-                    td 125.000
-                  tr
-                    td 8.940.833
-                    td 1,5%
-                    td 134.113
-                  tr.t-f3
-                    td 9.548.333
-                    td 1,5%
-                    td 143.225
-                  tr
-                    td 10.155.833
-                    td 1,5%
-                    td 152.338
-                  tr.t-f3
-                    td 10.763.333
-                    td 1,5%
-                    td 161.450
-                  tr
-                    td 11.370.833
-                    td 1,5%
-                    td 170.563
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ c
+        .col-lg-11 
+          .crd_03__txt
+            h4 Para desarrollar las fórmulas de <em>#[strong m]</em> y <em>#[strong b]</em> se utilizó la siguiente tabla en Excel:         
+            .row
+              .col-lg-6.mb-5  
+                .tabla-a
+                  table.t-f5.bordecel
+                    thead.t-f1
+                      tr
+                        th Año (histórico)
+                        th X
+                        th Y
+                        th XY
+                        th X
+                          sup 2
+                    tbody.t-f1
+                      tr.t-f3
+                        td Año 1
+                        td 1
+                        td 4.950.000
+                        td 4.950.000
+                        td 1
+                      tr
+                        td Año 2
+                        td 2
+                        td 5.380.000
+                        td 10.760.000
+                        td 4
+                      tr.t-f3
+                        td Año 3
+                        td 3
+                        td 5.760.000
+                        td 17.280.000
+                        td 9
+                      tr
+                        td Año 4
+                        td 4
+                        td 6.150.000
+                        td 24.000.000
+                        td 16
+                      tr.t-f3
+                        td Año 5
+                        td 5
+                        td 6.625.000
+                        td 33.125.000
+                        td 25
+                      tr
+                        td Año 6
+                        td 6
+                        td 8.377.500
+                        td 50.265.000
+                        td 36
+                      tr.t-f3
+                        td.fond-5
+                          b Sumatorias
+                        td
+                          b 21
+                        td
+                          b 37.242.500.
+                        td
+                          b 140.980.000
+                        td
+                          b 91
+              .col-lg-6.px-lg-5
+                p El resumen de los datos es el siguiente: 
+                .tabla-a.color-acento-botones.mb-5    
+                  table
+                    thead.t-f1
+                      tr
+                        th n	
+                        th 6
+                    tbody.t-f1
+                      tr.t-f3
+                        td.t-f5 Sumatoria de Y	
+                        td 37.242.500
+                      tr 
+                        td.t-f5 Sumatoria de X	
+                        td 21
+                      tr.t-f3 
+                        td.t-f5 Sumatoria de XY	
+                        td 140.980.000
+                      tr 
+                        td.t-f5 Sumatoria de X 
+                          sup 2	
+                        td 91
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ d
+        .col-lg-11 
+          .crd_03__txt
+            h4 A continuación, se presenta la gráfica de la línea de regresión elaborada con los datos consignados anteriormente:         
+            figure
+              img.img-500.mb-2(src="@/assets/tema2/img-9.svg")
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ e
+        .col-lg-11 
+          .crd_03__txt
+            h4.mb-4 Con los datos calculados de <em>m</em> y <em>b</em> se proyectan las ventas para los períodos que se necesiten. A continuación, se muestra la proyección para 6 años siendo 7 el primer año de la proyección:
+            .row.justify-content-around.align-items-center
+              .col-lg-6
+                table.bordecel
+                  thead
+                    tr
+                      th Año (proyectado)
+                      th N° del año
+                      th Cantidad
+                  tbody.t-f1
+                    tr.t-f3
+                      td Año 1
+                      td 7
+                      td 8.333.333
+                    tr
+                      td Año 2
+                      td 8
+                      td 8.940.833
+                    tr.t-f3
+                      td Año 3
+                      td 9
+                      td 9.548.333
+                    tr
+                      td Año 4
+                      td 10
+                      td 10.155.833
+                    tr.t-f3
+                      td Año 5
+                      td 11
+                      td 10.763.333
+                    tr
+                      td Año 6
+                      td 12
+                      td 11.370.833
+    .tarjeta.tarjeta-color
+      .row.justify-content-start
+        .col-lg-1.mb-3.px-md-3
+          span.circ f
+        .col-lg-11 
+            .crd_03__txt
+            h4.mb-4 De acuerdo con un estudio del mercado, la empresa podría participar con una participación del 1,5% de las ventas del sector, por lo cual la empresa vendería durante los próximos 6 años el siguiente volumen de unidades:
+            .row.justify-content-around.align-items-center
+              .col-lg-6
+                table.bordecel
+                  thead
+                    tr
+                      th Cantidad de ventas del sector
+                      th Participación de la empresa
+                      th Ventas de la empresa
+                  tbody.t-f1
+                    tr.t-f3
+                      td 8.333.333
+                      td 1,5%
+                      td 125.000
+                    tr
+                      td 8.940.833
+                      td 1,5%
+                      td 134.113
+                    tr.t-f3
+                      td 9.548.333
+                      td 1,5%
+                      td 143.225
+                    tr
+                      td 10.155.833
+                      td 1,5%
+                      td 152.338
+                    tr.t-f3
+                      td 10.763.333
+                      td 1,5%
+                      td 161.450
+                    tr
+                      td 11.370.833
+                      td 1,5%
+                      td 170.563
 
     p Es de aclarar que existen otros métodos para efectuar la proyección de ventas como:
 
@@ -331,7 +323,7 @@
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-5.px-2
         figure
-            img.img-500.mb-2(src="@/assets/tema2/img-10.svg")
+            img.img-500.mb-2(src="@/assets/tema2/img-10-.svg")
       .col-lg-5.px-2
         p El cálculo para los seis años quedaría de la siguiente manera:
         table
@@ -446,7 +438,7 @@
                 b $250.000
         br
         br
-        table.bord.bordecel.m-der 
+        table.bordecel.m-der 
           thead        
             tr
               th(colspan='4') Financiación con acreedores financieros
@@ -459,7 +451,7 @@
               td 24%
             tr.t-f3
               td(colspan='3') Plazo del pr&eacute;stamo en a&ntilde;os
-              td3
+              td 3
             tr
               td(colspan='3') Abono anual
               td $2.500.000
@@ -519,7 +511,7 @@
             tr
               td.t-f5
                 b Menos
-              td Inventari final
+              td Inventario final
             tr.t-f3
               td.t-f5
                 b Igual
@@ -590,24 +582,24 @@
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-7.justify-content-md-center.align-self-center
         figure
-          img.img-450.mb-2(src="@/assets/tema2/img-12.svg")
+          img.img-450.mb-2(src="@/assets/tema2/img-12-.svg")
 
     p.mb-5 De igual manera se calcula el número de unidades terminadas equivalentes al inventario final de productos en proceso:
 
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-7.justify-content-md-center.align-self-center
         figure
-          img.img-450.mb-2(src="@/assets/tema2/img-13.svg")
+          img.img-450.mb-2(src="@/assets/tema2/img-13-.svg")
 
     p.mb-5 Con los datos anteriores se calcula el número de unidades a producir bajo el siguiente esquema:
      
     .row.justify-content-around.align-items-center.mb-5
-      .col-lg-6.col-sm-8.justify-content-md-center.align-self-center
-        table
+      .col-lg-7.col-sm-8.justify-content-md-center.align-self-center
+        table.table
           thead
             tr
               td.w-20              
-              th Unidades a vender
+              th.w-50 Unidades a vender
               th 125.000
           tbody
             tr.t-f3
@@ -678,10 +670,12 @@
               td  (45.000 x 12)
               td $540.000
             tr
-              td  Total costos en efectivo
+              td 
+                b Total costos en efectivo
               td 
                 br
-              td $23.590.375
+              td
+                b $23.590.375
             tr
               td  Depreciaci&oacute;n
               td 
@@ -768,7 +762,7 @@
           thead
             tr
               th(colspan='2') 
-                b Presupuesto de costo de productos  (miles de pesos)
+                b Financiación con proveedores  (miles de pesos)
             
           tbody
             tr
@@ -929,10 +923,10 @@
               td = Utilidad bruta
               td.t-f4 $10.792.700
             tr
-              td - Gastos de Administraci&oacute;n y ventas
+              td - Gastos de administraci&oacute;n y ventas
               td.t-f4 $3.000.000
             tr
-              td = Utilidad Operativa
+              td = Utilidad operativa
               td.t-f4 $7.792.700
             tr
               td - Intereses
@@ -954,7 +948,7 @@
     .row.justify-content-around.align-items-center.mb-5
       .col-lg-6.justify-content-md-center.align-self-center
         figure
-          img.mb-2(src="@/assets/tema2/img-19.svg")
+          img.mb-2(src="@/assets/tema2/img-19--.svg")
 
     p ¿Qué datos van al estado de flujo de efectivo?
     p.mb-5 Veamos, por ejemplo, cómo se reparte el valor de las ventas en los diferentes estados financieros:
